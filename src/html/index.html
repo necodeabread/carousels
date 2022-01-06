@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar</title>
+
+    <link rel="stylesheet" href="sass/main.min.css">
+</head>
+<body>
+    <header>
+        @@include("template/navbar.html")
+    </header>
+
+    @@include("template/about.html")
+    <section class="screen-second">
+        <div class="screen-second__header">
+            <p>Your day</p>
+        </div>
+        <div class="container">
+            @@include("template/screen-adv.html")
+        </div>
+        <div class="screen-second__image">
+            <img src="img/2nd-screen-photo.png" alt="apts">
+        </div>
+    </section>
+
+    <section class="screen-third">
+        <h2 class="screen-third__header screen-third__header_dark text-center">
+            Stroll around and take in the beauty of reservation park, OAK Lawn Park, Turtle Creek Park or The Famous Katy Trail.
+        </h2>
+        <h3 class="screen-third__subheader 
+                    screen-third__subheader_dark 
+                    text-center">
+                    The homes and amenities of The Spencer feature a subtle mingling of organic materials and lush textures, giving the building a rich sense of character.
+        </h3>
+        <div class="screen-third__image">
+            <img src="img/3rd-screen-photo.png" alt="park">
+            <button class="imgtoggler">
+                <div class="imgtoggler-cross"></div>
+            </button>
+        </div>
+    </section>
+
+    <section class="fourth-screen">
+        <img src="img/4th-screen-photo.png" alt="parking lots">
+    </section>
+
+    <section class="fifth-screen">
+        <div class="container">
+            <div class="adv-block">
+                <h2 class="adv-block__header text-center">
+                    Ready to begin the day, step out of The Spencer and embrace the energy of Dallas.
+                </h2>
+                <h3 class="adv-block__subheader text-center">
+                    The homes and amenities of The Spencer feature a subtle mingling of organic materials and lush textures, giving the building a rich sense of character.
+                </h3>
+                <div class="modal-btn__wrapper">
+                    <button class="modal-btn modal-btn_transparent">
+                        <p>Schedule a tour</p>
+                        <img src="img/btn-logo-icon.svg">
+                    </button>
+                </div>
+                </button>
+            </div>
+        </div>
+        <div class="fifth-screen__image">
+            <img src="img/5th-screen-photo.png" alt="apts">
+            <button class="imgtoggler">
+                <div class="imgtoggler-cross"></div>
+            </button>
+        </div>
+    </section>
+
+    <section class="sixth-screen">
+        <div class="sixth-screen__text text-center">
+            <p>End the day with dip in the rooftop pool or coctails by the firepit on our rooftop deck overlooking downtown Dallas.</p>
+        </div>
+        <div class="sixth-screen__image">
+            <img src="img/6th-screen-photo.png" alt="more apts">
+        </div>
+        <div class="container">
+            <div class="form">
+                <form>
+                    <h2 class="form-header text-center">Contact us for more information about The Spencer.</h2>
+                    <label class="form-label" for="name">Name*</label>
+                    <input class="form-input" type="text" id="name" name="name">
+                    <label class="form-label" for="email">Email*</label>
+                    <input class="form-input" type="email" id="email" name="email">
+                    <label class="form-label" for="number">Phone number*</label>
+                    <input class="form-input" type="phone" id="number" name="number">
+                    <button class="form-btn">Request a call</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    @@include("template/footer.html")
+</body>
+</html>

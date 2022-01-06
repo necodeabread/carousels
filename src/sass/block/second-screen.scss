@@ -1,0 +1,23 @@
+.screen-second {
+    &__header {
+        width: 36%;
+        border-bottom: 2px solid var(--clr-primary-400);
+        padding-top: 56px;
+        text-align: right;
+        p {
+            color: var(--clr-primary-400);
+            font-size: var(--fz-primary-400);
+        }
+    }
+    &__image {
+        width: 100%;
+        height: 340px;
+        position: relative;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

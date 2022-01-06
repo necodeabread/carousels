@@ -1,0 +1,38 @@
+.footer {
+    position: relative;
+    top: -60px;
+    &__links {
+        list-style-type: none;
+        border-top: 1px solid #f8eadc;
+        border-bottom: 1px solid #f8eadc;
+        padding: 43px 0;
+        li {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            font-size: var(--fz-d-primary-400);
+        }
+    }
+    &__copyright {
+        color: #aca6b4;
+        letter-spacing: -0.21px;
+        font-size: var(--fz-primary-400);
+        &_desktop {
+            display: none;
+        }
+    }
+    &__header {
+        font-size: var(--fz-accent-700);
+        font-weight: 700;
+    }
+    &__subheader {
+        width: 76%;
+        margin: 0 auto;
+        font-size: var(--fz-primary-400);
+        line-height: 1.93;
+    }
+    &__social {
+        display: none;
+    }
+}

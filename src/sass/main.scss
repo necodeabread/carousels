@@ -1,0 +1,89 @@
+:root {
+    --clr-primary-100: #fff;
+    --clr-primary-200: #fffbf4;
+    --clr-primary-300: #F3EEE8;
+    --clr-primary-400: #60517c;
+    --clr-primary-700: #33322d;
+    --clr-primary-900: #131314;
+
+    --clr-secondary-400: #aca6b4;
+
+    --fz-primary-400: 14px;
+    --fz-primary-700: 23px;
+
+    --fz-accent-400: 25px;
+    --fz-accent-600: 30px;
+    --fz-accent-700: 32px;
+
+    --fz-d-primary-100: 14px;
+    --fz-d-primary-200: 18px;
+    --fz-d-primary-300: 20px;
+    --fz-d-primary-400: 30px;
+
+    --fz-d-accent-300: 32px;
+    --fz-d-accent-400: 40px;
+    --fz-d-accent-700: 60px;
+
+    --ff-menu: 'Be Vietnam Pro', sans-serif;
+    --ff-primary: 'Inter', sans-serif;
+    --ff-accent: 'Shippori Mincho B1', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--ff-primary, serif);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1450px;
+    width: 92%;
+    margin: 0 auto;
+    &_full {
+        width: 100%;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Inter:wght@400;500&family=Shippori+Mincho+B1:wght@400;600;700&display=swap');
+
+@import "block/*.scss";

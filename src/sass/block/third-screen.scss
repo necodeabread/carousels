@@ -1,0 +1,27 @@
+.screen-third {
+    background-color: #fffbf4;
+    &__header {
+        font-size: var(--fz-primary-700);
+        width: 84%;
+        margin: 0 auto;
+        padding-top: 47px;
+        padding-bottom: 19px;
+    }
+    &__subheader {
+        font-size: var(--fz-primary-400);
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 56px;
+        line-height: 1.6;
+    }
+    &__image {
+        width: 100%;
+        height: 478px;    
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

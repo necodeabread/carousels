@@ -1,0 +1,42 @@
+.form {
+    background-color: var(--clr-primary-400);
+    padding: 31px 26px 40px 28px;
+    color: var(--clr-primary-100);
+    position: relative;
+    top: -120px;
+    &-header {
+        font-size: var(--fz-primary-700);
+        padding-bottom: 24px;
+    }
+    &-label {
+        display: block;
+        color: #a6a1b0;
+        font-size: 10px;
+    }
+    &-input {
+        width: 100%;
+        margin-bottom: 40px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #a6a1b0;
+        color: var(--clr-primary-100);
+        padding-bottom: 10px;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid #fff;
+            font-size: var(--fz-primary-400);
+        }
+    }
+    &-btn {
+        width: 172px;
+        height: 46px;
+        color: var(--clr-primary-400);
+        font-size: var(--fz-primary-400);
+        font-weight: 500;
+        border: none;
+        background-color: #f3eee8;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

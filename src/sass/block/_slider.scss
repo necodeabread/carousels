@@ -1,0 +1,77 @@
+.slider {
+    width: 75vw;
+    height: unset;
+    border: 8px solid var(--clr-primary-400);
+    box-shadow: 0 0 48px black;
+    position: absolute;
+    z-index: 10;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    @include md{
+        height: 100vh;
+    }
+}
+
+.slick-arrow {
+    display: none;
+    @include md {
+        display: block;
+    }
+}
+.slick-prev, .slick-next {
+    display: none; 
+    @include md {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url("../img/chevron_left_icon.svg") center center/cover no-repeat;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.slick-next {
+    display: none;
+    @include md {
+        right: 0;
+        transform: scale(-1, 1) translateY(-50%);
+    }
+}
+
+.slick-slide {
+    img {
+        width: 75vw;
+        object-fit: cover;
+        height: 100%;
+        @include md {
+            height: auto;
+        }
+    }
+}
+
+.slick-initialized {
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    opacity: .6;
+    display: none;
+    z-index: 1000;
+}

@@ -1,0 +1,58 @@
+<div class="modal-window"> <!--modal-window_active-->
+    <div class="modal-window__content">
+        <div class="modal-window-close">
+            <div class="modal-window-cross"></div>
+        </div>
+        <div class="modal-window__header">Lorem ipsum dolor sit amet consectetur adipis. </div>
+        <div class="modal-window__subheader">Veritatis quis quas molestias eveniet ve.</div>
+        <div class="modal-window__form">
+            <form action="#">
+                <label for="name_modal" class="modal-window__label">Name*</label>
+                <input type="text" class="modal-window-input" id="name_modal" required>
+
+                <input 
+                    type="tel" 
+                    class="modal-window-input" 
+                    id="number-modal"
+                    placeholder="Telephone number">
+                <input 
+                    type="email" 
+                    class="modal-window-input" 
+                    id="mail-modal"
+                    placeholder="Email adress*"
+                    required>
+
+                <select id="residence" class="modal-window-select">
+                    <option value="" disabled selected>Desired option: </option>
+                    <option value="option1">Option1</option>
+                    <option value="option2">Option2</option>
+                    <option value="option3">Option3</option>
+                </select>
+
+                <select id="represented" class="modal-window-select" required>
+                    <option value="" disabled selected>Are you represented by someone?*</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <select id="someone" class="modal-window-select" required>
+                    <option value="" disabled selected>Are you someone?*</option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <select id="price" class="modal-window-select" required>
+                    <option value="" disabled selected>Price*</option>
+                    <option value="1500">1000-1500$/sqm</option>
+                    <option value="2000">1500-2000$/sqm</option>
+                    <option value="2500">2000-2500$/sqm</option>
+                </select>
+
+                <p class="modal-window__required">* Required fields</p>
+                <button class=modal-window__submit>Send</button>
+            </form>
+        </div>
+    </div>
+</div>

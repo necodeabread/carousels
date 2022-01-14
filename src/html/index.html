@@ -5,56 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar</title>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css"/>
 
     <link rel="stylesheet" href="sass/main.min.css">
 </head>
 <body>
-    <header>
+    <nav>
         @@include("template/navbar.html")
-    </header>
+        @@include("template/modal-window.html")
+    </nav>
 
     @@include("template/about.html")
-    <section class="screen-second">
-        <div class="screen-second__header">
+    <section class="screen screen-second">
+        <div class="popup"></div>
+        <div class="slider" id="second">
+            <img src="img/2nd-screen-photo.png">
+            <img src="img/2nd-screen-photo.png">
+            <img src="img/2nd-screen-photo.png">
+            <img src="img/2nd-screen-photo.png">
+        </div>
+        <div class="screen-second__header" data-aos="fade-right">
             <p>Your day</p>
         </div>
-        <div class="container">
-            @@include("template/screen-adv.html")
-        </div>
-        <div class="screen-second__image">
-            <img src="img/2nd-screen-photo.png" alt="apts">
-        </div>
-    </section>
-
-    <section class="screen-third">
-        <h2 class="screen-third__header screen-third__header_dark text-center">
-            Stroll around and take in the beauty of reservation park, OAK Lawn Park, Turtle Creek Park or The Famous Katy Trail.
-        </h2>
-        <h3 class="screen-third__subheader 
-                    screen-third__subheader_dark 
-                    text-center">
-                    The homes and amenities of The Spencer feature a subtle mingling of organic materials and lush textures, giving the building a rich sense of character.
-        </h3>
-        <div class="screen-third__image">
-            <img src="img/3rd-screen-photo.png" alt="park">
-            <button class="imgtoggler">
-                <div class="imgtoggler-cross"></div>
-            </button>
-        </div>
-    </section>
-
-    <section class="fourth-screen">
-        <img src="img/4th-screen-photo.png" alt="parking lots">
-    </section>
-
-    <section class="fifth-screen">
-        <div class="container">
+        <div class="adv-block-wrapper" data-aos="fade-right">
             <div class="adv-block">
                 <h2 class="adv-block__header text-center">
-                    Ready to begin the day, step out of The Spencer and embrace the energy of Dallas.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit velit cul
                 </h2>
                 <h3 class="adv-block__subheader text-center">
-                    The homes and amenities of The Spencer feature a subtle mingling of organic materials and lush textures, giving the building a rich sense of character.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat doloremque labore architecto accusamus molestiae asperiores ipsum magnam, ducimus quo
                 </h3>
                 <div class="modal-btn__wrapper">
                     <button class="modal-btn modal-btn_transparent">
@@ -62,10 +43,66 @@
                         <img src="img/btn-logo-icon.svg">
                     </button>
                 </div>
+            </div>
+            <div class="screen-second__image">
+                <img src="img/2nd-screen-photo.png" alt="apts">
+                <button class="imgtoggler">
+                    <div class="imgtoggler-cross"></div>
                 </button>
             </div>
         </div>
-        <div class="fifth-screen__image">
+    </section>
+
+    <section class="screen screen-third">
+        <div class="slider" id="third">
+            <img src="img/3rd-screen-photo.png">
+            <img src="img/3rd-screen-photo.png">
+            <img src="img/3rd-screen-photo.png">
+            <img src="img/3rd-screen-photo.png">
+        </div>
+        <div class="screen-third-wrapper" data-aos="zoom-out">
+            <h2 class="screen-third__header screen-third__header_dark">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae aliquam incidunt voluptatem debitis doloremque aut.
+            </h2>
+            <h3 class="screen-third__subheader screen-third__subheader_dark">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt alias consequuntur repellat sit provident quas repudiandae, illo, exercitationem totame. 
+            </h3>
+        </div>
+        <div class="screen-third__image" data-aos="fade-left">
+            <img src="img/3rd-screen-photo.svg" alt="park">
+            <button class="imgtoggler">
+                <div class="imgtoggler-cross"></div>
+            </button>
+        </div>
+    </section>
+
+    <section class="fourth-screen" data-aos="fade-up">
+        <img src="img/4th-screen-photo.png" alt="parking lots">
+    </section>
+
+    <section class="screen fifth-screen">
+        <div class="slider" id="fifth">
+            <img src="img/5th-screen-photo.png">
+            <img src="img/5th-screen-photo.png">
+            <img src="img/5th-screen-photo.png">
+            <img src="img/5th-screen-photo.png">
+        </div>
+        <div class="adv-block adv-block_left">
+            <h2 class="adv-block__header">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ut facilis perfere.
+            </h2>
+            <h3 class="adv-block__subheader">
+                Facere eum hic, officia odio maxime, veritatis pariatur omnis accusamus delectus nesciunt assumenda excepturi obcaecati, iure dolore magni necessitati.
+            </h3>
+            <div class="modal-btn__wrapper">
+                <button class="modal-btn modal-btn_transparent">
+                    <p>Schedule a tour</p>
+                    <img src="img/btn-logo-icon.svg">
+                </button>
+            </div>
+            </button>
+        </div>
+        <div class="fifth-screen__image" data-aos="fade-left">
             <img src="img/5th-screen-photo.png" alt="apts">
             <button class="imgtoggler">
                 <div class="imgtoggler-cross"></div>
@@ -74,28 +111,36 @@
     </section>
 
     <section class="sixth-screen">
-        <div class="sixth-screen__text text-center">
-            <p>End the day with dip in the rooftop pool or coctails by the firepit on our rooftop deck overlooking downtown Dallas.</p>
+        <div class="sixth-screen__text" data-aos="fade-left">
+            <p>Sed magnam eligendi laboriosam quas exercitationem deleniti minus facere explicabo cupiditate ad doloribus, tempore.</p>
         </div>
         <div class="sixth-screen__image">
             <img src="img/6th-screen-photo.png" alt="more apts">
         </div>
-        <div class="container">
-            <div class="form">
-                <form>
-                    <h2 class="form-header text-center">Contact us for more information about The Spencer.</h2>
+        <div class="form" data-aos="fade-up">
+            <h2 class="form-header" data-aos="fade-left">Lorem ipsum dolor sit, amet consectetur adipisicin</h2>
+            <form>
+                <div class="form-slot">
                     <label class="form-label" for="name">Name*</label>
-                    <input class="form-input" type="text" id="name" name="name">
+                    <input class="form-input" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-slot">
                     <label class="form-label" for="email">Email*</label>
-                    <input class="form-input" type="email" id="email" name="email">
+                    <input class="form-input" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-slot">
                     <label class="form-label" for="number">Phone number*</label>
-                    <input class="form-input" type="phone" id="number" name="number">
-                    <button class="form-btn">Request a call</button>
-                </form>
-            </div>
+                    <input class="form-input" type="phone" id="number" name="number" required>
+                </div>
+                <button class="form-btn">Request a call</button>
+            </form>
         </div>
     </section>
 
     @@include("template/footer.html")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

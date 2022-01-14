@@ -1,0 +1,102 @@
+.form {
+    background-color: var(--clr-primary-400);
+    padding: 31px 26px 40px 28px;
+    color: var(--clr-primary-100);
+    position: relative;
+    top: -120px;
+    width: 92%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    @include md {
+        width: 100%;
+        top: 0;
+    }
+    &-header {
+        font-size: var(--fz-primary-700);
+        padding-bottom: 24px;
+        text-align: center;
+        @include md {
+            width: 36%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            padding-top: 112px;
+            margin-bottom: 53px;
+            font-size: 36px;
+            text-align: left;
+        }
+    }
+    &-label {
+        display: block;
+        color: #a6a1b0;
+        font-size: 10px;
+        @include md {
+            position: absolute;
+            top: 16px;
+            font-size: 12px;
+            &_active {
+                font-size: 10px;
+                color: #a6a1b0;
+                transform: translateY(-20px);
+                transition: .4s all;
+            }
+        }
+    }
+    &-input {
+        width: 100%;
+        margin-bottom: 40px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #a6a1b0;
+        color: var(--clr-primary-100);
+        padding-bottom: 10px;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid #fff;
+            font-size: var(--fz-primary-400);
+        }
+    }
+    &-slot {
+        @include md {
+            width: 28%; 
+            padding-right: 38px;
+            position: relative;
+        }
+    }
+    &-btn {
+        width: 172px;
+        height: 46px;
+        color: var(--clr-primary-400);
+        font-size: var(--fz-primary-400);
+        font-family: var(--ff-primary);
+        font-weight: 500;
+        border: none;
+        background-color: #f3eee8;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .8s all;
+        @include md {
+            left: 0;
+            transform: none;
+            &:focus, &:hover {
+                cursor: pointer;
+                outline: none;
+                transform: scale(1.1);
+            }
+        }
+    }
+    form {
+        @include md {
+            display: flex;
+            position: relative;
+            width: 81.25%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

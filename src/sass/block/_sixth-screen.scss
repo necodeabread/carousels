@@ -1,0 +1,52 @@
+.sixth-screen {
+    @include md {
+        position: relative;
+    }
+    &__text {
+        font-size: var(--fz-primary-700);
+        padding: 150px 0;
+        line-height: 1.4;
+        background-color: #f3eee8;
+        text-align: center;
+        color: #33322d;
+        font-family: var(--ff-accent);
+        font-weight: 600;
+        @include md {
+            padding-left: 32.6%;
+        }
+        p {
+            width: 80%;
+            margin: 0 auto;
+            @include md {
+                width: 52%;
+                text-align: left;
+                line-height: 1.4;
+                font-size: var(--fz-d-primary-400);
+                margin: 0;
+            }
+        }
+    }
+    &__image {
+        height: 555px;
+        width: 100%;
+        position: relative;
+        top: -60px;
+        z-index: -1;
+        @include md {
+            position: absolute;
+            width: 25%;
+            height: 70vh;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include md {
+                object-fit: unset;
+            }
+        }
+    }
+}

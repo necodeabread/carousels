@@ -1,0 +1,64 @@
+.screen-third {
+    background-color: #fffbf4;
+    padding-top: 83px;
+    position: relative;
+    @include md {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-bottom: 180px;
+    }
+    &__header {
+        font-size: var(--fz-primary-700);
+        width: 84%;
+        margin: 0 auto;
+        padding-bottom: 19px;
+        text-align: center;
+        font-family: (--ff-accent);
+        font-weight: 600;
+        color: #33322d;
+        @include md {
+            padding-top: 47px;
+            width: 100%;
+            font-size: var(--fz-d-accent-400);
+            line-height: 1.4;
+            text-align: left;
+        }
+    }
+    &__subheader {
+        text-align: center;
+        font-size: var(--fz-primary-400);
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 56px;
+        line-height: 1.6;
+        font-family: var(--ff-primary);
+        font-weight: 400;
+        color: #131314;
+        @include md {
+            width: 100%;
+            font-size: var(--fz-d-primary-300);
+            text-align: left;
+        }
+    }
+    &-wrapper {
+        @include md {
+            width: 457px;
+            margin-right: 77px;
+        }
+    }
+    &__image {
+        width: 100%;
+        height: 478px;    
+        position: relative;
+        @include md {
+            width: 57%;
+            height: 1105px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

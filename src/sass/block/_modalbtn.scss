@@ -1,0 +1,86 @@
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 1.24;
+    width: 175px;
+    height: 46px;
+    transition: .4 border-width;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+        border-width: 4px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        @include md {
+            justify-content: start;
+        }
+        &_about {
+            @include md {
+                display: none;
+            }
+        }
+        &_navbar {
+            display: none;
+            @include md {
+                display: flex;
+            }
+        }
+    }
+    &_navbar {
+        color: var(--clr-primary-400);
+        background-color: transparent;
+        border: 2px solid var(--clr-primary-400);
+        @include md {
+            display: none;
+        }
+        &:focus {
+            outline: none;
+            border: 4px solid var(--clr-primary-400);
+            border-radius: 20px;
+        }
+    }
+    &_transparent {
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        font-size: var(--fz-primary-400);
+        transition: 2s all;
+    }
+    &_active {
+        border: 2px solid var(--clr-primary-400);
+        background-color: transparent;
+        color: var(--clr-primary-400);
+        font-size: var(--fz-primary-400);
+        transition: 2s all;
+    }
+    p {
+        padding-right: 10px;
+    }
+    &_footer {
+        display: none;
+        @include md {
+            display: flex;
+        }
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: solid 2px var(--clr-primary-400);
+        color: var(--clr-primary-400);
+    }
+
+    //for navbar 
+    &__img {
+        filter: none;
+        &_active {
+            filter: invert(34%) sepia(29%) saturate(601%) hue-rotate(219deg) brightness(88%) contrast(89%);
+        }
+    }
+}

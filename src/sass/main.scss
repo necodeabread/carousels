@@ -1,9 +1,6 @@
 :root {
     --clr-primary-100: #fff;
-    --clr-primary-200: #fffbf4;
-    --clr-primary-300: #F3EEE8;
     --clr-primary-400: #60517c;
-    --clr-primary-700: #33322d;
     --clr-primary-900: #131314;
 
     --clr-secondary-400: #aca6b4;
@@ -13,7 +10,6 @@
 
     --fz-accent-400: 25px;
     --fz-accent-600: 30px;
-    --fz-accent-700: 32px;
 
     --fz-d-primary-100: 14px;
     --fz-d-primary-200: 18px;
@@ -22,9 +18,7 @@
 
     --fz-d-accent-300: 32px;
     --fz-d-accent-400: 40px;
-    --fz-d-accent-700: 60px;
 
-    --ff-menu: 'Be Vietnam Pro', sans-serif;
     --ff-primary: 'Inter', sans-serif;
     --ff-accent: 'Shippori Mincho B1', serif;
 }
@@ -45,6 +39,8 @@ body {
     font-weight: 400;
     font-size: 1.3125rem;
     line-height: 1.6;
+    background-color:#fffbf4;
+    width: 100%;
 }
 
 body,
@@ -55,11 +51,23 @@ p {
     margin: 0;
 }
 
-header {
+nav {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+}
+
+@mixin md {
+    @media( min-width: 1200px ) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media ( min-width: 768px ) {
+        @content;
+    }
 }
 
 .container {
@@ -69,10 +77,9 @@ header {
     &_full {
         width: 100%;
     }
-}
-
-.text-center {
-    text-align: center;
+    @include md {
+        width: 80%;
+    }
 }
 
 .underlined {
